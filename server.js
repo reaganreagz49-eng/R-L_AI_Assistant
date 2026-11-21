@@ -3,7 +3,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const root = path.join(__dirname, "public");
+const root = __dirname;
 const port = process.env.PORT || 3000;
 
 async function reply(message) {
