@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="R&L AI Assistant">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>R&L AI Assistant</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+<b>R&L</b>
+<div>
+<h1>R&L AI Assistant</h1>
+<small>Your personal AI assistant</small>
+</div>
+</header>
+<section class="welcome">
+<strong>Hello! 👋</strong>
+<p>Welcome to R&L. Ask me a question and I'll do my best to help.</p>
+</section>
+<section id="chat">
+<div class="bot">Hello! I'm R&L AI Assistant. What would you like help with?</div>
+</section>
+<form id="form">
+<input id="msg" placeholder="Type your message..." required maxlength="4000">
+<button>Send</button>
+</form>
+<footer>Powered by R&L AI</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
+}
+</script>
