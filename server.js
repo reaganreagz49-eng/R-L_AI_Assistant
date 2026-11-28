@@ -18,7 +18,7 @@ async function reply(message) {
             },
             body: JSON.stringify({
                 model: "openai/gpt-oss-120b",
-                max_tokens: 250,
+                max_tokens: 80,
                 messages: [
                     {
                         role: "system",
